@@ -1,0 +1,31 @@
+
+button{
+        display: inline-block;
+        padding: 0.5em 1em;
+        margin: 1em;
+        background-color: $secondary;
+
+        border: 1.4px solid $primary;
+        border-radius: 0.38em;
+        box-sizing: border-box;
+
+        font-family: $lato;
+        font-size: $fsz-sm;
+        font-weight: $sem;
+        
+
+        text-decoration: none;
+        color: $primary;
+        text-align: center;
+
+        cursor: pointer;
+
+        transition: all 0.2s;
+            &:hover{
+                    background-color: $primary;
+            }
+    }
+button > a:hover{
+        
+        color: $secondary;
+}

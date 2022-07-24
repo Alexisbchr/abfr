@@ -1,0 +1,29 @@
+footer{
+        
+        min-width: 45vw;
+
+        height: 20vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        font-size: $fsz-sm;
+        font-weight: $sem;
+        
+        
+}
+footer>p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+}
+footer > p > a {
+        cursor:pointer;
+        border-bottom:1px rgba(0, 0, 0, 0.293) solid;
+}

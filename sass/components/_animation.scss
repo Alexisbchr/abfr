@@ -1,0 +1,62 @@
+.animate{
+        transition: transform 1.5s ease-in-out; 
+                &:hover{
+                        transform: skewY(1deg) skewX(1deg) rotateX(5deg) rotateY(5deg);
+                        transform-origin: center;
+                }
+                &.i-right:hover{
+                        transform: skewY(-1deg) skewX(-1deg) rotateX(-5deg) rotateY(-5deg);
+                        transform-origin: center; 
+                } 
+                &.infinite{
+                        animation: 5s linear infinite skew-rotate;      
+                }
+}
+
+
+@keyframes skew-rotate{
+        0%{
+        transform: skewY(1deg) skewX(1deg) rotateX(5deg) rotateY(5deg);
+        transform-origin: center;
+        }
+        50%{
+        transform: skewY(-1deg) skewX(-1deg) rotateX(-5deg) rotateY(-5deg);
+        transform-origin: center;
+        }
+        100%{
+        transform: skewY(1deg) skewX(1deg) rotateX(5deg) rotateY(5deg);
+        transform-origin: center;
+        }
+  }
+
+
+.animate-logo{
+        transition:all 0.2s;
+    
+&.animate-logo:hover{
+        transition:all 0.2s;
+        transform: skewY(-1deg) skewX(-1deg) rotateX(-20deg) rotateY(-20deg);
+        
+        transform-origin: center;
+  }
+}
+
+@keyframes battement{
+  0%{
+          transform: scale(1);
+          transform-origin: center;
+  }
+  50%{
+          transform: scale(1.5);
+          transform-origin: center;
+  }
+  100%{
+          transform: scale(1.2);
+          transform-origin: center;
+  }
+}
+
+.anim-heart{
+        padding: 0 0.5rem;
+        animation: 1s linear infinite battement;
+}
